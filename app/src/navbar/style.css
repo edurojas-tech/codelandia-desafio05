@@ -9,13 +9,26 @@
 .navbar__links {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   gap: 30px;
   height: 100%;
+  padding-top: 8px;
+}
+
+.navbar__imagem {
+  width: 100px;
 }
 
 @media (max-width: 600px){
   .navbar {
     padding: 5px 30px;
   }  
+}
+
+
+@media (min-width: 1400px){
+  .navbar {
+    padding: 5px 200px;
+  }
+  
 }

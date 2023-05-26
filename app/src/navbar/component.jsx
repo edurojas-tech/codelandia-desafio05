@@ -9,8 +9,10 @@ function component() {
         <img src={logo} alt="logo" className="navbar__imagem" />
       </div>
       <div className="navbar__links">
-        {Links.map(link => (
-          <a href={link.desc} target="_blank"><img src={link.icon} alt="" /></a>
+        {Links.map((link, index) => (
+          <a href={link.desc} key={index} target="__blank">
+            <img src={link.icon} alt={link.desc} />
+          </a>
         ))}
       </div>
     </div>
